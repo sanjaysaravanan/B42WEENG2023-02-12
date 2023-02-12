@@ -1,0 +1,87 @@
+Topics:
+
+  classlist toggle
+
+  removeEventListener -- events can only be removed wth named callback function
+
+  options in eventListener
+
+  2. Concepts in events
+
+    1. Propagation --> events propagate through inner <-> outer between related elements
+
+      1. Bubbling (inner to outer) ---> event propagation of events from innerMost child to outermost parent 
+      2. Capturing (outer to inner) ---> event progation of events from outermost parent to innermost child
+
+      stopProgation func for an event
+
+  Callback
+
+    callback function ---> a function reference/definition which is used an arguement to another function to execute a set of statements
+
+    sync operations exectution:
+      Eg: forEach, map, filter, find
+
+    async operations execution ( operation running in background )
+      Eg: setTimout ( wait for sometime to execute )
+          setInterval ( executes frequently after certain interval )
+          element.addEventListner(type, listern: callback);
+
+    Javascript is a single thread 
+    
+    async operations are put into a queue after the wait time/ or completion of action.
+    then js grabs them from the callback queue for execution
+
+    use & purpose of the callback
+
+    callback advantages:
+      1. Modularity / Reusability
+      2. To keep track when to execute what statements as a callback in a asynchronous operation
+
+      asynchronous operation always go for named callback function to keep track
+
+    pain of callback
+      Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code
+
+  Example Task:
+    Count backwards from 10 to 1, then say Happy Valentine's Day
+
+    table creation
+
+    id, class, nested structure, keys to pass test case 
+
+    Discussion for Task
+      Pagination:
+        how to pass test cases
+      calculator:
+        use eval for infx expresiion valuation
+        eval('2+2(2)');
+
+      Form: 
+        1. How to take form values to JS
+
+Next Session:
+  Promise:
+
+    Object to understand the completion(or failure) of an asynchronous event/operation
+
+    State:
+
+      pending --->  initial state, neither fulfilled nor rejected.
+
+      fullfilled ---> meaning that the operation was completed successfully.
+
+      rejected ---> meaning that the operation failed.
+
+      methods:
+        then ---> executed when the promise is fullfilled/resolved
+        catch ---> executed when the promise is rejected/unfullfilled
+
+    Go thorugh online about below,
+    API ---> Application Programming Interface
+
+      APIs are the communication between services( backend, front-end, payment, ... ) can be using JSON etc...
+
+      State of an application using APIs ---> REST APIs --> representational state transfer
+  
+  window --> localstorage, sessionStorage
