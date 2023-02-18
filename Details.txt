@@ -55,12 +55,15 @@ Topics:
         how to pass test cases
       calculator:
         use eval for infx expresiion valuation
-        eval('2+2(2)');
+        eval('2+2*(2)');
 
       Form: 
         1. How to take form values to JS
 
 Next Session:
+
+  Form: 
+        1. How to take form values to JS
   Promise:
 
     Object to understand the completion(or failure) of an asynchronous event/operation
